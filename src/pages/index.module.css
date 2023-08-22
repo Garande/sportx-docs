@@ -1,0 +1,156 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.landing {
+  color: #222;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+  margin: 0;
+  /* background-color: #fff; */
+  /* background-color: red; */
+  height: 100%;
+  padding: 2px;
+}
+
+.landingButton {
+  background-color: var(--primary);
+  padding: 8px 15px;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.landingHeader {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 30;
+  padding: 0.5rem 1rem;
+}
+
+.headerFixed {
+  background-color: #fff;
+  box-shadow: 0 1px 3px 0 rgba(54, 74, 99, 0.05);
+  border-bottom: 1px solid #e5e9f2;
+  width: 100%;
+  /* top: 0; */
+  z-index: 99;
+}
+
+.navbarBrand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.navbarBrand img {
+  max-height: 45px;
+  width: auto;
+}
+
+.overview {
+  /* height: 400px; */
+  max-height: 850px;
+  width: 100%;
+  background-color: rgba(246, 249, 254, 1);
+  position: relative;
+}
+
+.overviewDecoration {
+  position: absolute;
+  top: auto;
+  /* top: 10px; */
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  /* z-index: -1; */
+}
+
+.landingMenuItem {
+  position: relative;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  /* margin: 0 8px; */
+  color: #222;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+}
+
+.landingMenuItem::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 1.25rem;
+  width: 50%;
+  -webkit-transform-origin: right center;
+  -ms-transform-origin: right center;
+  transform-origin: right center;
+  height: 3px;
+  border-radius: 50px;
+  background: var(--primary);
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.landingMenuItem.active::before {
+  background: var(--primary);
+}
+
+.landingMenuItem.active,
+.landingMenuItem.is-active,
+.landingMenuItem:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.landingMenuItem.active::before,
+.landingMenuItem.is-active::before,
+.landingMenuItem:hover::before {
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.landingContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

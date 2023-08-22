@@ -1,0 +1,22 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.overview {
+  /* height: 400px; */
+  max-height: 850px;
+  width: 100%;
+  background-color: rgba(246, 249, 254, 1);
+  position: relative;
+}
+
+.overviewDecoration {
+  position: absolute;
+  top: auto;
+  /* top: 10px; */
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  /* z-index: -1; */
+}

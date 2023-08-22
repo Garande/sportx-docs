@@ -1,0 +1,31 @@
+.section-bg {
+  background-image: url("/img/shapes/cta-bg.png");
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* border-radius: 8px !important; */
+
+  padding-top: 4rem /* 64px */;
+  padding-bottom: 4rem /* 64px */;
+
+  /* //
+  // padding-bottom: 200px;
+  // padding-top: 200px; */
+}
+
+.subscribe-card {
+  background: linear-gradient(90deg, #45c0b8 0, #0d8b83);
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  position: relative;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("/img/shapes/shape-1.png");
+}
